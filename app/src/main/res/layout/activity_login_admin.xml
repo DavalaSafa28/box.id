@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Register">
-
+    tools:context=".LoginAdmin">
 
     <ImageView
         android:id="@+id/header_box.id"
@@ -20,10 +19,10 @@
     </ImageView>
 
     <TextView
-        android:id="@+id/header2_register"
+        android:id="@+id/header2_login_admin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Register"
+        android:text="Login Admin"
         android:textSize="35dp"
         android:textColor="#383838"
         android:textStyle="bold"
@@ -34,53 +33,26 @@
 
     </TextView>
 
-    <EditText
-        android:id="@+id/et_nama"
-        android:layout_width="300dp"
-        android:layout_height="59dp"
-        android:layout_marginTop="48dp"
-        android:background="@drawable/bg_input"
-        android:hint="Nama Lengkap"
-        android:inputType="text"
-        android:paddingLeft="30dp"
-        android:textColor="@color/black"
-        android:textColorHint="#808080"
-        app:layout_constraintTop_toBottomOf="@+id/header2_register"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"/>
+
+
 
     <EditText
-        android:id="@+id/et_alamat"
+        android:id="@+id/et_email_admin"
         android:layout_width="300dp"
         android:layout_height="59dp"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/bg_input"
-        android:hint="Alamat"
-        android:inputType="text"
-        android:paddingLeft="30dp"
-        android:textColor="@color/black"
-        android:textColorHint="#808080"
-        app:layout_constraintTop_toBottomOf="@+id/et_nama"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"/>
-
-    <EditText
-        android:id="@+id/et_email"
-        android:layout_width="300dp"
-        android:layout_height="59dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="100dp"
         android:background="@drawable/bg_input"
         android:hint="Email"
-        android:inputType="textEmailAddress"
+        android:inputType="text"
         android:paddingLeft="30dp"
         android:textColor="@color/black"
         android:textColorHint="#808080"
-        app:layout_constraintTop_toBottomOf="@+id/et_alamat"
+        app:layout_constraintTop_toBottomOf="@+id/header2_login_admin"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"/>
 
     <EditText
-        android:id="@+id/et_password"
+        android:id="@+id/et_password_admin"
         android:layout_width="300dp"
         android:layout_height="59dp"
         android:layout_marginTop="20dp"
@@ -90,20 +62,20 @@
         android:paddingLeft="30dp"
         android:textColor="@color/black"
         android:textColorHint="#808080"
-        app:layout_constraintTop_toBottomOf="@+id/et_email"
+        app:layout_constraintTop_toBottomOf="@+id/et_email_admin"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"/>
 
     <Button
-        android:id="@+id/bt_register"
+        android:id="@+id/bt_login_admin"
         android:layout_width="300dp"
         android:layout_height="59dp"
         android:background="@drawable/button_blue"
         android:layout_marginTop="20dp"
-        android:text="Register"
+        android:text="Login"
         android:textSize="20dp"
         android:textColor="@color/white"
-        app:layout_constraintTop_toBottomOf="@id/et_password"
+        app:layout_constraintTop_toBottomOf="@id/et_password_admin"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
